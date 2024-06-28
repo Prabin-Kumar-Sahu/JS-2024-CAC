@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="Body">
+    <h1>Hello JS</h1>
+    <ul class="listitem">
+        <li >Java Script</li>
+    </ul>
+  </body>
+  <script>
+    // const addli=document.createElement('li')
+    // addli.innerHTML="Java"
+    // document.body.appendChild(addli)
+
+   function addLanguage(language)
+   {
+    const addli = document.createElement('li')
+    // addli.innerHTML=`${language}`
+    addli.innerHTML=language
+    document.querySelector('.listitem').appendChild(addli)
+   }
+   addLanguage('java')
+   addLanguage('java')
+   function addoptilan(language)
+   {
+    const addlist=document.createElement('li')
+    addlist.appendChild(document.createTextNode(language))
+    document.querySelector('.listitem').appendChild(addlist)
+   }
+   addoptilan('c++')
+
+
+   //Edit 
+   const edit = document.querySelector('li:nth-child(2)')
+  //  edit.innerHTML="golang"
+  const newlan=document.createElement('li')
+  newlan.textContent="mojo"
+  edit.replaceWith(newlan)
+   
+  
+  </script>
+
+</html>
