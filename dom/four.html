@@ -41,13 +41,27 @@
 
 
    //Edit 
-   const edit = document.querySelector('li:nth-child(2)')
+   {const edit = document.querySelector('li:nth-child(2)')
   //  edit.innerHTML="golang"
   const newlan=document.createElement('li')
   newlan.textContent="mojo"
-  edit.replaceWith(newlan)
+  edit.replaceWith(newlan)}
    
+  const secedit=document.querySelector("li:nth-child(1)")
+  const newlan=document.createElement('li')
+  newlan.textContent="pyhton"
+  secedit.replaceWith(newlan)
   
+
+  // edit with outerhtml
+  const cng=document.querySelector('li:first-child')
+  cng.outerHTML='<li>Hello</li>'
+
+
+  
+  const cng2=document.querySelector('li:first-child')
+  cng2.remove()
+
   </script>
 
 </html>
