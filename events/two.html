@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Or Code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Prabin Kumar Sahu")
+    },5000)
+    // setInterval  (function(){
+    //     console.log("Prabin Kumar Sahu")
+    // },2000)
+    const textChange = "Best Js Series"
+    const newh1= document.querySelector("h1")
+    const changeme =setTimeout(function(){
+        newh1.innerHTML=textChange
+
+    },2000)
+   
+    const btn=  document.getElementById('stop')
+    btn.addEventListener("click" , function()
+    {
+        clearTimeout(changeme)
+        console.log("stop")
+    } )
+</script>
+</html>
