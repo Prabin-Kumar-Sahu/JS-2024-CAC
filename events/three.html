@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai Or Code</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+  </body>
+  <script>
+    const strbtn = document.getElementById("start");
+    const stpbtn = document.getElementById("stop");
+    const h1cng = document.querySelector("h1");
+
+
+    let interValid ;
+    const s = function()
+    {
+        h1cng.innerHTML="Start"
+        console.log("start")
+    }
+    strbtn.addEventListener('click', ()=>
+{
+    clearInterval(interValid)
+    interValid = setInterval(s ,2000)
+})
+   
+stpbtn.addEventListener("click" , ()=>
+{
+    clearInterval(interValid) 
+    h1cng.innerHTML="Chai Or Code"
+    console.log("stop")
+})
+  </script>
+</html>
